@@ -1,0 +1,6 @@
+<span class="gritter-add-sticky btn btn-default btn-block btn-fa fa-stacked glyphicons right_arrow"><i></i><strong>Add sticky notification</strong><span>Has to be manually removed</span></span>
+<span class="gritter-add-without-image btn btn-default btn-block btn-icon glyphicons right_arrow"><i></i>Add notification without image</span>
+<span class="gritter-add-white btn btn-default btn-block btn-fa fa-stacked glyphicons right_arrow"><i></i><strong>Add white notification</strong><span>Has a "gritter-light" class applied</span></span>
+<span class="gritter-add-max btn btn-default btn-block btn-fa fa-stacked glyphicons right_arrow"><i></i><strong>Add notification with max. of 3</strong><span>Only if there are &lt;= 3 messages already on screen</span></span>
+
+{{component.gritter}}

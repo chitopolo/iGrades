@@ -1,0 +1,51 @@
+.list-group-front {
+	border:none;
+	> li  {
+		.rounded(3px,3px,3px,3px);
+		padding: 0;
+		border:none;
+		a {
+			font-size: 14px;
+			font-weight: bold;
+			color:#373737;
+			display: block;
+			padding: 10px 15px;
+			[class*="fa-"] { 
+				color: #e4e4e4; font-size: 18px;
+				width: 25px;
+			}
+		}
+		&.active, &.active:hover {
+			background: @primaryColor;
+			border: none;
+			&, > *, [class*="fa-"], p, p *, .media-heading, .text-faded { color: #fff !important; }
+		}
+		&:hover {
+			background: fade(#efefef, 30%);
+			> a > [class*="fa-"] { color: @primaryColor; }
+		}
+	}
+	.list-group-front{
+		background: lighten(@primaryColor, 37%);
+		> li { 
+			border-color: lighten(@primaryColor, 17%);
+			background: none;
+			> a { color: darken(@primaryColor, 10%); }
+			&.active, &.active:hover {
+				background: lighten(@primaryColor, 20%);
+				border: none;
+				> a {
+					color: darken(@primaryColor, 15%);
+					> [class*="fa-"] { color:@primaryColor; }
+				}
+			}
+			&:hover { background: lighten(@primaryColor, 27%); }
+		}
+	}
+	&.borders-none {
+		> li {
+			border-left: none;
+			border-right: none;
+		}
+	}
+}

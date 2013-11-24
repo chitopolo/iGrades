@@ -1,0 +1,214 @@
+@menuSidebarWidth: 170px;
+@menuSidebarItemHeight: 43px;
+@menuSidebarBg: darken(@inverseColor, 10%);
+
+#menu {
+	
+	width: @menuSidebarWidth;
+	background: @menuSidebarBg;
+	
+	#sidebar-discover-wrapper {
+		#logoWrapper {
+			position: relative;
+			z-index: 2;
+			background: lighten(@menuSidebarBg, 2%);
+			height: 100px;
+			width: @menuSidebarWidth;
+			#logo {
+				width: 58px;
+				display: block;
+				position: absolute;
+				top: 21px;
+				left: 56px;
+				img { border: none; max-width: 100%; }
+			}
+		}
+		.sidebar-discover-menu { 
+			display: none; 
+		}
+		#discover {
+			background: @inverseColor;
+			position: absolute;
+			height: 100%;
+			top: 0;
+			right: 0;
+			width: @menuSidebarWidth - 50px;
+			z-index: 1;
+			overflow: hidden;
+			.border-bottom { border-color: @menuSidebarBg; }
+			ul {
+				list-style: none;
+				li {
+					border-bottom: 1px solid lighten(@menuSidebarBg,6%);
+					a {
+						position: relative;
+						text-align: center;
+						display: block;
+						color: #999999;
+						font-weight: 600;
+						padding: 10px 0;
+						i { 
+							display: block; 
+							font-size: 29px;
+						}
+						.badge {
+							position: absolute;
+							top: 10px;
+							right: 10px;
+							padding: 3px 5px;
+							font-size: 11px;
+							color: @inverseColor;
+							border-color: @inverseColor;
+							font-weight: 700;
+							background: #999;
+						}
+						&:hover { 
+							color: #fff; 
+							span.badge {
+								border-color: @primaryColor;
+								background: #2c2c2c;
+								color: #fff;
+							}
+						}
+					}
+					&.active {
+						> a {
+							background: #2c2c2c;
+							color: #ffffff;
+							> i:before { color:@primaryColor; }
+						}
+						span.badge {
+							border-color: @primaryColor;
+							background: #2c2c2c;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	#sidebar-discover-wrapper.open {
+		#logoWrapper {
+			overflow: hidden;
+			width: 50px;
+			#logo {
+				left: 8px;
+				width: 33px;
+				top: 30px;
+			}
+		}
+		> ul {
+			width: 50px;
+			> li {
+				> a {
+					> i {
+						width: 50px;
+						&:before { width: 50px; }
+					}
+					&.open {
+						> i:before {
+							color: @primaryColor;
+						}
+					}
+					&:hover > i:before { color: @primaryColor; }
+					span { opacity: 0; }
+				}
+				&.active > a { background: none; }
+				> a.open { background: darken(@inverseColor,10%); }
+				&.active > a.open i:before { color: #fff; }
+				&.active > a { background: @primaryColor; }
+			}
+		}
+	}
+	> div {
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+	
+		> ul {
+			padding: 0;
+			width: @menuSidebarWidth;
+			position: absolute;
+			top: 100px;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			z-index: 2;
+			background: @menuSidebarBg;
+			overflow: hidden;
+			> li {
+				position: relative;
+				height: @menuSidebarItemHeight;
+				border-bottom: 1px solid lighten(@menuSidebarBg, 2%);
+				padding: 0;
+				> a {
+					padding: 0 0 0 16px;
+					display: block;
+					color: #999999;
+					font-weight: 600;
+					text-decoration: none;
+					height: @menuSidebarItemHeight;
+					line-height: @menuSidebarItemHeight;
+					position: relative;
+					font-size: 14px;
+					> span {
+						position: absolute;
+						left: 46px;
+						&.badge {
+							display: inline-block;
+							position: absolute;
+							top: 13px;
+							right: 15px;
+							left: auto;
+							padding: 3px 5px;
+							font-size: 11px;
+							color: @inverseColor;
+							border-color: @inverseColor;
+							font-weight: 700;
+							background: #999;
+						}
+					}
+					> i {
+						display: inline-block;
+						height: @menuSidebarItemHeight;
+						vertical-align: middle;
+						width: 40px;
+						&:before { 
+							color: #999999;
+							position: relative;
+							text-align: left;
+							top: -2px;
+							left: auto;
+							width: 40px;
+							font-size: 18px;
+							height: @menuSidebarItemHeight;
+							line-height: @menuSidebarItemHeight;
+						}
+					}
+					&:hover {
+						background: darken(@inverseColor,5%);
+						> i:before { color: @primaryColor; }
+						span.badge {
+							border-color: @primaryColor;
+							background: #2c2c2c;
+							color: #fff;
+						}
+					}
+				}
+				&.active {
+					> a {
+						background: @primaryColor;
+						color: #ffffff;
+						/*text-shadow: 0 1px 0 rgba(0,0,0, .3);*/
+						> i:before { color:#fff; }
+					}
+					span.badge {
+						border-color: @primaryColor;
+						background: #2c2c2c;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

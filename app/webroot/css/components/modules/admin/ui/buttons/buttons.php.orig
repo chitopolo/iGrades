@@ -1,0 +1,181 @@
+<!-- Buttons -->
+<div class="widget widget-heading-simple widget-body-white widget-body-simple">
+	<div class="widget-head"><h4 class="heading glyphicons show_thumbnails"><i></i>Buttons</h4></div>
+	<div class="widget-body">
+		{{component.tables-responsive}}
+		<table class="table table-responsive block table-vertical-center" id="demo_buttons">
+			<thead>
+				<tr>
+					<th class="center">Regular Buttons</th>
+					<th class="center">Buttons + Icons</th>
+					<th class="center">Buttons + Dropdown</th>
+					<th style="width: 35%" class="center">Double Buttons</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-default">Default</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-default btn-icon glyphicons home"><i></i>Default</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								Dropdown Default
+							    <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-fa fa-stacked btn-block btn-default glyphicons glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></span>
+					</td>
+				</tr>	
+				<tr>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-primary">Primary</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-primary btn-icon glyphicons home"><i></i>Primary</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								Dropdown Primary
+							    <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-fa fa-stacked btn-block btn-primary glyphicons glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></span>
+					</td>
+				</tr>
+				<tr>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-warning">Warning</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-warning btn-icon glyphicons home"><i></i>Warning</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<div class="btn-group">
+							<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+								Dropdown Warning
+							    <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-fa fa-stacked btn-block btn-warning glyphicons glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></span>
+					</td>
+				</tr>
+				<tr>	
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-success">Success</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-success btn-icon glyphicons home"><i></i>Success</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<div class="btn-group">
+							<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+								Dropdown Success
+							    <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-fa fa-stacked btn-block btn-success glyphicons glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></span>
+					</td>
+				</tr>
+				<tr>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-danger">Danger</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-danger btn-icon glyphicons home"><i></i>Danger</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<div class="btn-group">
+							<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+								Dropdown Danger
+							    <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-fa fa-stacked btn-block btn-danger glyphicons glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></span>
+					</td>
+				</tr>
+				<tr>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-inverse">Inverse</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-block btn-inverse btn-icon glyphicons home"><i></i>Inverse</span>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<div class="btn-group">
+							<button type="button" class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">
+								Dropdown Inverse
+							    <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</td>
+					<td class="center padding-left-none padding-right-none">
+						<span class="btn btn-fa fa-stacked btn-block btn-inverse glyphicons glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+</div>
+<!-- // Buttons END -->
+
+{{less.buttons}}
+{{less.tables}}
+{{less.widgets}}

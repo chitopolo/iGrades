@@ -1,0 +1,11 @@
+<div class="widget widget-heading-simple widget-body-gray">
+	<div class="widget-body text-center">
+		<div class="glyphicons glyphfa fa-xlarge glyphfa fa-top circle_question_mark">
+			<i></i>
+			<h4>Have a Question?</h4>
+			<p class="margin-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> <a href="" class="text-underline">Get your answer</a></p>
+		</div>
+	</div>
+</div>
+
+{{component.widget-question-block}}
